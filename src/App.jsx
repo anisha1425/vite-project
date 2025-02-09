@@ -19,6 +19,7 @@ function App() {
 
   const filteredProducts = products.filter(
     (product) =>
+    (product) =>
       (category === "All" || product.category === category) &&
       product.name.toLowerCase().includes(search.toLowerCase())
   );
